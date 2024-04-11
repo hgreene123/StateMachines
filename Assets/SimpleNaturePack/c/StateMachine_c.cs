@@ -48,7 +48,7 @@ public class StateMachine_c : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        currentState = State.walking;
+       currentState = State.walking;
     }
 
     void Swimming()
@@ -77,6 +77,7 @@ public class StateMachine_c : MonoBehaviour
         if (lastPosition == transform.position)
         {
             currentState = State.idle;
+
         }
         lastPosition = transform.position;
     }
